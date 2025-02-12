@@ -3569,22 +3569,21 @@ MonoBehaviour:
   - So we have this big window right here, you may or may not already seen me hiding
     in plain sight but let just go to the first step for now.
   - As you can see, the window is a little too big to see all the detail right now,
-    do you think so? so let us <b>zoom</b> right in!
+    do you think so? So let us <b>zoom</b> right in!
   - '<b>Use your mouse scroll to zoom in and out!
 
     Just keep zooming in until
     you can''t!</b>'
   zoomTutorialIMG: []
   moveTutorial:
-  - Whoa! you zoom right in huh!
-  - Now that you zoom in this far, you can literally see all the detail in this window
-    now.
-  - But staring at this one place doesn't really feel right, huh.
-  - How about we move around! and try to find me when you are at it!
-  - '<b>Try to click and drag the screen to move around!
+  - Whoa! you zoom right in, huh?
+  - Now that you zoomed in this far, you can literally see all the detail in this
+    window now.
+  - But staring at this one place doesn't feel right, huh?
+  - How about we move around? And try to find me while you're at it!
+  - '<b>Click and drag the screen to move around!
 
-    Try to find and click
-    me!</b>'
+    Try to find and click me!</b>'
   moveTutorialIMG: []
   TheTutorialMasterHimself: {fileID: 117037776}
 --- !u!1 &1742290542
@@ -4072,7 +4071,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 673639695666934170, guid: c9d09cf481f79524c8034197189920b4, type: 3}
       propertyPath: 'contentText.Array.data[0]'
-      value: You Found me!
+      value: You found me!
       objectReference: {fileID: 0}
     - target: {fileID: 673639695666934170, guid: c9d09cf481f79524c8034197189920b4, type: 3}
       propertyPath: 'contentText.Array.data[1]'
@@ -4080,11 +4079,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 673639695666934170, guid: c9d09cf481f79524c8034197189920b4, type: 3}
       propertyPath: 'contentText.Array.data[2]'
-      value: Now you're ready to explore this window 'til your heart content!
+      value: Now you're ready to explore this window 'til your heart's content!
       objectReference: {fileID: 0}
     - target: {fileID: 673639695666934170, guid: c9d09cf481f79524c8034197189920b4, type: 3}
       propertyPath: 'contentText.Array.data[3]'
-      value: You'll find a lot of people here that has been waiting for you!
+      value: You'll find a lot of people here that have been waiting for you!
       objectReference: {fileID: 0}
     - target: {fileID: 673639695666934170, guid: c9d09cf481f79524c8034197189920b4, type: 3}
       propertyPath: 'contentText.Array.data[4]'
