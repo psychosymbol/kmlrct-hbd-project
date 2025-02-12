@@ -1,0 +1,1066 @@
+fileFormatVersion: 2
+guid: f5c154ed66fcc5d439588b3607dec4f6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -185669005451946682
+    second: ONwindow_0
+  - first:
+      213: 1045676670014379339
+    second: ONwindow_1
+  - first:
+      213: -1573972695646323699
+    second: ONwindow_2
+  - first:
+      213: 7687816422547745230
+    second: ONwindow_3
+  - first:
+      213: -2738368879693644174
+    second: ONwindow_4
+  - first:
+      213: 3520340917100717483
+    second: ONwindow_5
+  - first:
+      213: -7596589970680752414
+    second: ONwindow_6
+  - first:
+      213: 895582878621501284
+    second: ONwindow_7
+  - first:
+      213: 6697190788722336658
+    second: ONwindow_8
+  - first:
+      213: -3648679839211481262
+    second: ONwindow_9
+  - first:
+      213: -6852703279448048183
+    second: ONwindow_10
+  - first:
+      213: 782541596618751484
+    second: ONwindow_11
+  - first:
+      213: 9132291314781561299
+    second: ONwindow_12
+  - first:
+      213: -7109262966288913469
+    second: ONwindow_13
+  - first:
+      213: 8266645648708509955
+    second: ONwindow_14
+  - first:
+      213: -6548613329146158388
+    second: ONwindow_15
+  - first:
+      213: -2700817455947616586
+    second: ONwindow_16
+  - first:
+      213: 8387634467847110335
+    second: ONwindow_17
+  - first:
+      213: -131128077026463009
+    second: ONwindow_18
+  - first:
+      213: 6394841460719386526
+    second: ONwindow_19
+  - first:
+      213: 8587576637373058007
+    second: ONwindow_20
+  - first:
+      213: -2253973711995344330
+    second: ONwindow_21
+  - first:
+      213: 5976487229924259141
+    second: ONwindow_22
+  - first:
+      213: 1891182777983632278
+    second: ONwindow_23
+  - first:
+      213: -5235676938910795998
+    second: ONwindow_24
+  - first:
+      213: 7393935638802644772
+    second: ONwindow_25
+  - first:
+      213: 4623532082229143814
+    second: ONwindow_26
+  - first:
+      213: 7084958249452041223
+    second: ONwindow_27
+  - first:
+      213: 913238910149987024
+    second: ONwindow_28
+  - first:
+      213: -841994850515148683
+    second: ONwindow_29
+  - first:
+      213: 9190424540651124766
+    second: ONwindow_30
+  - first:
+      213: 1956838373133146472
+    second: ONwindow_31
+  - first:
+      213: -413003699346971556
+    second: ONwindow_32
+  - first:
+      213: -9142051830350763498
+    second: ONwindow_33
+  - first:
+      213: -5593488686526940714
+    second: ONwindow_34
+  - first:
+      213: 8547912337919642474
+    second: ONwindow_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ONwindow_0
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 3611
+        width: 201
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6459c34f50f5c6df0800000000000000
+      internalID: -185669005451946682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_1
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 3797
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b45de12246df28e00800000000000000
+      internalID: 1045676670014379339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_2
+      rect:
+        serializedVersion: 2
+        x: 2862
+        y: 3642
+        width: 192
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0c36dd2c20282ae0800000000000000
+      internalID: -1573972695646323699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_3
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 3731
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec96f54fd4c90ba60800000000000000
+      internalID: 7687816422547745230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_4
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 2683
+        width: 253
+        height: 815
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27e30ed230c5ff9d0800000000000000
+      internalID: -2738368879693644174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_5
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2884
+        width: 300
+        height: 722
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba5af0c9963cad030800000000000000
+      internalID: 3520340917100717483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_6
+      rect:
+        serializedVersion: 2
+        x: 2747
+        y: 3428
+        width: 60
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e6574d8bad739690800000000000000
+      internalID: -7596589970680752414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_7
+      rect:
+        serializedVersion: 2
+        x: 2749
+        y: 2818
+        width: 249
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 467082312efbd6c00800000000000000
+      internalID: 895582878621501284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_8
+      rect:
+        serializedVersion: 2
+        x: 3332
+        y: 2679
+        width: 270
+        height: 823
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29320d20a8331fc50800000000000000
+      internalID: 6697190788722336658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_9
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 2880
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2579bac84094d5dc0800000000000000
+      internalID: -3648679839211481262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_10
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 2862
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd385dacae46e0a0800000000000000
+      internalID: -6852703279448048183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_11
+      rect:
+        serializedVersion: 2
+        x: 2809
+        y: 2790
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfd7d60af652cda00800000000000000
+      internalID: 782541596618751484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_12
+      rect:
+        serializedVersion: 2
+        x: 2867
+        y: 2805
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d1a0fad09a6cbe70800000000000000
+      internalID: 9132291314781561299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_13
+      rect:
+        serializedVersion: 2
+        x: 2808
+        y: 2759
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb6287aff2d65d90800000000000000
+      internalID: -7109262966288913469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_14
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 2491
+        width: 197
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 301ac4f3b6609b270800000000000000
+      internalID: 8266645648708509955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_15
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 2636
+        width: 37
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc2ead88fd6ae15a0800000000000000
+      internalID: -6548613329146158388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_16
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 2648
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6be611755d4c48ad0800000000000000
+      internalID: -2700817455947616586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_17
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 2640
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbe79d1eb1dd66470800000000000000
+      internalID: 8387634467847110335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_18
+      rect:
+        serializedVersion: 2
+        x: 2693
+        y: 2638
+        width: 37
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd2f1cc65b32e2ef0800000000000000
+      internalID: -131128077026463009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_19
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 2650
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f7e1d5d6a0fb850800000000000000
+      internalID: 6394841460719386526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_20
+      rect:
+        serializedVersion: 2
+        x: 2745
+        y: 2642
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7db8018e3733d2770800000000000000
+      internalID: 8587576637373058007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_21
+      rect:
+        serializedVersion: 2
+        x: 3257
+        y: 2494
+        width: 191
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63ae27bd9d648b0e0800000000000000
+      internalID: -2253973711995344330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_22
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 2611
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5453b48887fb0f250800000000000000
+      internalID: 5976487229924259141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_23
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 2601
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6930d0777b4de3a10800000000000000
+      internalID: 1891182777983632278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_24
+      rect:
+        serializedVersion: 2
+        x: 2713
+        y: 2613
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 227748950932757b0800000000000000
+      internalID: -5235676938910795998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_25
+      rect:
+        serializedVersion: 2
+        x: 2746
+        y: 2603
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42fbeeae9498c9660800000000000000
+      internalID: 7393935638802644772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_26
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 2549
+        width: 70
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 609e3e8aee51a2040800000000000000
+      internalID: 4623532082229143814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_27
+      rect:
+        serializedVersion: 2
+        x: 2641
+        y: 2551
+        width: 70
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 704ff0b7df3d25260800000000000000
+      internalID: 7084958249452041223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_28
+      rect:
+        serializedVersion: 2
+        x: 3421
+        y: 2553
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0da0e8243f97cac00800000000000000
+      internalID: 913238910149987024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_29
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 2477
+        width: 45
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57026500522a054f0800000000000000
+      internalID: -841994850515148683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_30
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 2480
+        width: 58
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e18fa804d62fa8f70800000000000000
+      internalID: 9190424540651124766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_31
+      rect:
+        serializedVersion: 2
+        x: 2660
+        y: 2479
+        width: 45
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8695471f126182b10800000000000000
+      internalID: 1956838373133146472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_32
+      rect:
+        serializedVersion: 2
+        x: 2712
+        y: 2482
+        width: 58
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c546089d257b44af0800000000000000
+      internalID: -413003699346971556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_33
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 2329
+        width: 35
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61aabb50c48e02180800000000000000
+      internalID: -9142051830350763498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_34
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 2136
+        width: 176
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d93568dcafef52b0800000000000000
+      internalID: -5593488686526940714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONwindow_35
+      rect:
+        serializedVersion: 2
+        x: 3245
+        y: 2140
+        width: 215
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b01e88bf840a670800000000000000
+      internalID: 8547912337919642474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ONwindow_0: -185669005451946682
+      ONwindow_1: 1045676670014379339
+      ONwindow_10: -6852703279448048183
+      ONwindow_11: 782541596618751484
+      ONwindow_12: 9132291314781561299
+      ONwindow_13: -7109262966288913469
+      ONwindow_14: 8266645648708509955
+      ONwindow_15: -6548613329146158388
+      ONwindow_16: -2700817455947616586
+      ONwindow_17: 8387634467847110335
+      ONwindow_18: -131128077026463009
+      ONwindow_19: 6394841460719386526
+      ONwindow_2: -1573972695646323699
+      ONwindow_20: 8587576637373058007
+      ONwindow_21: -2253973711995344330
+      ONwindow_22: 5976487229924259141
+      ONwindow_23: 1891182777983632278
+      ONwindow_24: -5235676938910795998
+      ONwindow_25: 7393935638802644772
+      ONwindow_26: 4623532082229143814
+      ONwindow_27: 7084958249452041223
+      ONwindow_28: 913238910149987024
+      ONwindow_29: -841994850515148683
+      ONwindow_3: 7687816422547745230
+      ONwindow_30: 9190424540651124766
+      ONwindow_31: 1956838373133146472
+      ONwindow_32: -413003699346971556
+      ONwindow_33: -9142051830350763498
+      ONwindow_34: -5593488686526940714
+      ONwindow_35: 8547912337919642474
+      ONwindow_4: -2738368879693644174
+      ONwindow_5: 3520340917100717483
+      ONwindow_6: -7596589970680752414
+      ONwindow_7: 895582878621501284
+      ONwindow_8: 6697190788722336658
+      ONwindow_9: -3648679839211481262
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
