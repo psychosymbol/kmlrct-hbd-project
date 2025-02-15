@@ -615,7 +615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correction: 2
-  isTokenize: 1
+  isTokenize: 0
   separator: 
   tmpText: {fileID: 5017144125519879330}
   lastKnownText: 
