@@ -9803,7 +9803,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6582772551739090713, guid: d178cac3f49369d4bbf32d9fc27cf573, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d178cac3f49369d4bbf32d9fc27cf573, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9909,3 +9909,9 @@ MonoBehaviour:
   contentOwner: "\u0E0A\u0E37\u0E48\u0E2D\u0E40\u0E08\u0E49\u0E32\u0E02\u0E2D\u0E07\u0E04\u0E33\u0E2D\u0E27\u0E22\u0E1E\u0E23"
   particleColor: {r: 1, g: 1, b: 1, a: 1}
   foundParticle: {fileID: 1824900582406759871}
+  OnChatCompleteEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  bookIndex: 0
+  isInteracted: 0
+  isBookButton: 1

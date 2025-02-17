@@ -76,8 +76,12 @@ public class MainMenuController : MonoBehaviour
         }
     }
 
+    private bool startTransitionSequence = false;
+
     public void ButtonClick()
     {
+        if (startTransitionSequence) return;
+        startTransitionSequence = true;
         TransitionToNextScene();
     }
     public void GoToNextScene()

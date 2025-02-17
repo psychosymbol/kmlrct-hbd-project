@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class CharacterInteraction : MonoBehaviour
@@ -10,7 +11,12 @@ public class CharacterInteraction : MonoBehaviour
     public string contentOwner;
     public Color particleColor;
     public GameObject foundParticle;
+    public UnityEvent OnChatCompleteEvent;
+    public int bookIndex;
+    public bool isInteracted = false;
+    public bool isBookButton = false;
 
+    private bool flagForStar = false;
     private void Start()
     {
         imgSprite = GetComponent<Image>().sprite;
@@ -21,7 +27,35 @@ public class CharacterInteraction : MonoBehaviour
 
     public void Interacted()
     {
+        isInteracted = true;
         ChatBoxController.instance.ShowChat(imgSprite, contentOwner, contentText, contentIMG);
-        foundParticle.SetActive(true);
+        if (!isBookButton)
+        {
+            ParticleActivation(true);
+            flagForStar = true;
+        }
+    }
+
+    private void Update()
+    {
+        if (isInteracted)
+            if (!ChatBoxController.instance.inChatSequence)
+            {
+                if (flagForStar)
+                {
+                    flagForStar = false;
+                    BookController.instance.SpawnStar(this, OnChatCompleteEvent);
+                }
+
+                if (isBookButton)
+                {
+                    OnChatCompleteEvent.Invoke();
+                }
+            }
+    }
+
+    public void ParticleActivation(bool active)
+    {
+        foundParticle.SetActive(active);
     }
 }
