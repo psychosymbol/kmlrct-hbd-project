@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class CharacterInteraction : MonoBehaviour
 {
-    private Sprite imgSprite;
+    public Sprite imgSprite;
     public Sprite[] contentIMG;
     [TextArea(10,7)]
     public string[] contentText;
@@ -19,7 +19,8 @@ public class CharacterInteraction : MonoBehaviour
     private bool flagForStar = false;
     private void Start()
     {
-        imgSprite = GetComponent<Image>().sprite;
+        if (isBookButton)
+            imgSprite = GetComponent<Image>().sprite;
         ParticleSystem parti = foundParticle.GetComponent<ParticleSystem>();
         ParticleSystem.MainModule main = parti.main;
         main.startColor = particleColor;

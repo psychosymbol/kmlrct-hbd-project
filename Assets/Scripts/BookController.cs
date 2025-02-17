@@ -206,7 +206,7 @@ public class BookController : MonoBehaviour
         starAnim.enabled = false;
 
         Image starIMG = star.GetComponent<Image>();
-        //starIMG.color = chara.particleColor;
+        starIMG.color = chara.particleColor;
 
         Button charaButton = chara.GetComponent<Button>();
         charaButton.interactable = false;

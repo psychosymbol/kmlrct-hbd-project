@@ -31,9 +31,12 @@ public class AudioManager : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyUp(KeyCode.Escape))
+        if (Application.platform != RuntimePlatform.WebGLPlayer)
         {
-            Application.Quit();
+            if (Input.GetKeyUp(KeyCode.Escape))
+            {
+                Application.Quit();
+            }
         }
     }
 }

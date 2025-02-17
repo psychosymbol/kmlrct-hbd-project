@@ -42,7 +42,8 @@ public class MainMenuController : MonoBehaviour
     void Start()
     {
         Camera.main.backgroundColor = bgColors[(int)gameMode];
-        Cursor.SetCursor(mouseCursor[(int)gameMode], Vector2.zero, CursorMode.Auto);
+        Cursor.visible = false;
+        CursorManager.Instance.SetCursor((int)gameMode);
         particleSet[(int)gameMode].SetActive(true);
         gameEdition[(int)gameMode].SetActive(true);
 

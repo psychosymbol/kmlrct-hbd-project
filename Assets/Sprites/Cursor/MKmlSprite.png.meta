@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 84ca9f8bfd3cbd943914a4c445195644
+guid: b53d83ed95466564193edb80e431e40a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8458411191384603320
-    second: KMLcoverR_0
+      213: 1597551475795021390
+    second: MKml_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -24,7 +24,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -74,7 +74,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: KMLcoverR_0
+      name: MKml_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 491
-        height: 543
+        width: 99
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 845055506dfad9a80800000000000000
-      internalID: -8458411191384603320
+      spriteID: e4ec9216a94ab2610800000000000000
+      internalID: 1597551475795021390
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      KMLcoverR_0: -8458411191384603320
+      MKml_0: 1597551475795021390
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
