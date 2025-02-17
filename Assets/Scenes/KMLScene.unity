@@ -2582,6 +2582,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 673639695666934170, guid: c9d09cf481f79524c8034197189920b4, type: 3}
+      propertyPath: imgSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d5e27bc25150e0145a52c2ff14bea033, type: 3}
+    - target: {fileID: 673639695666934170, guid: c9d09cf481f79524c8034197189920b4, type: 3}
       propertyPath: contentOwner
       value: Rayfinix
       objectReference: {fileID: 0}
@@ -2770,7 +2774,7 @@ PrefabInstance:
     - target: {fileID: 673639695666934170, guid: c9d09cf481f79524c8034197189920b4, type: 3}
       propertyPath: 'contentIMG.Array.data[0]'
       value: 
-      objectReference: {fileID: 5703634407035508507, guid: c5b724b46056ea747aa0f28b01c4ad34, type: 3}
+      objectReference: {fileID: 6380520386020117134, guid: ffd8a1254b179a44785e3aa550fed3d2, type: 3}
     - target: {fileID: 1332873807381212246, guid: c9d09cf481f79524c8034197189920b4, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -6894,6 +6898,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -3784395752625585181, guid: 6916d43236c4f9548ab949a66ffa9879, type: 3}
+    - target: {fileID: 2372079937774967381, guid: c2cb49ff65e362c4eb76f626a8ba608b, type: 3}
+      propertyPath: 'contentIMG.Array.data[0]'
+      value: 
+      objectReference: {fileID: 6380520386020117134, guid: ffd8a1254b179a44785e3aa550fed3d2, type: 3}
     - target: {fileID: 2744171749139287136, guid: c2cb49ff65e362c4eb76f626a8ba608b, type: 3}
       propertyPath: m_Camera
       value: 
