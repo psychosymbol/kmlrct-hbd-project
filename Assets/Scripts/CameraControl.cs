@@ -25,13 +25,15 @@ public class CameraControl : MonoBehaviour
 
     void Update()
     {
-        if(zoomable) Zoom(Input.mouseScrollDelta.y);
-        if(moveable) PanCamera();   
+        if (!ChatBoxController.instance.inChatSequence)
+        {
+            if (zoomable) Zoom(Input.mouseScrollDelta.y);
+            if (moveable) PanCamera();
+        }
     }
 
     void PanCamera()
     {
-
         if(Input.GetMouseButtonDown(0))
         {
             dragOrigin = cam.ScreenToWorldPoint(Input.mousePosition);

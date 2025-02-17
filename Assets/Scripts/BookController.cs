@@ -21,6 +21,8 @@ public class BookController : MonoBehaviour
         currentPage = 0;
     }
 
+    public Sprite starSprite;
+
     public RectTransform bookButtonRT;
     public RectTransform markRT;
     public RectTransform centerRT;
@@ -217,6 +219,7 @@ public class BookController : MonoBehaviour
 
         starRT.position = spawnPos;
         starRT.localScale = Vector3.zero;
+        starIMG.sprite = starSprite;
         star.SetActive(true);
 
         float randSpeed = Random.Range(.1f, 1f);
@@ -225,13 +228,28 @@ public class BookController : MonoBehaviour
         float echoPulse = 0;
         float pulseTimer = .05f;
 
-        charaRT
-            .DOScale(Vector3.zero, 1)
-            .SetDelay(1)
-            .OnUpdate(() =>
-            {
-                chara.ParticleActivation(false);
-            });
+        CanvasGroup charaCG = chara.GetComponent<CanvasGroup>();
+
+        if (charaCG != null)
+        {
+            charaCG
+                .DOFade(0, 1)
+                .SetDelay(1)
+                .OnUpdate(() =>
+                {
+                    chara.ParticleActivation(false);
+                });
+        }
+        else
+        {
+            charaRT
+                .DOScale(Vector3.zero, 1)
+                .SetDelay(1)
+                .OnUpdate(() =>
+                {
+                    chara.ParticleActivation(false);
+                });
+        }
         //starRT
         //    .DOMove(camCenter, 1).SetDelay(1);
         starRT

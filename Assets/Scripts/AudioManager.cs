@@ -28,4 +28,12 @@ public class AudioManager : MonoBehaviour
             else SFXchannels.Add(item.GetComponent<AudioSource>());
         }
     }
+
+    private void Update()
+    {
+        if(Input.GetKeyUp(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
 }

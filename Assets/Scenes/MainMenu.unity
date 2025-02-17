@@ -16745,7 +16745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e143a63f35c7e9541bd6e7fcd2e6f14d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameMode: 1
+  gameMode: 0
   bgColors:
   - {r: 0.7254902, g: 0.8980392, b: 1, a: 1}
   - {r: 1, g: 0.83921576, b: 0.70980394, a: 1}
@@ -22021,7 +22021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25d361acc7fe2f645b0951a5cb0b0c9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BGMsource: {fileID: 0}
+  BGMsource: {fileID: 1060041276}
   SFXchannels: []
 --- !u!1 &2098771140
 GameObject:

@@ -97,21 +97,36 @@ public class TinyTimTimTheTutorialMaster : MonoBehaviour
     {
         if (fullGameIsInit) return;
         var cm = Camera.main;
-        cm.DOOrthoSize(2500, 1).OnComplete(() =>
+        cm
+            .DOOrthoSize(2500, 1)
+            .OnComplete(() =>
         {
-            cm.transform.DOMove(new Vector3(0, 0, -10), 1).OnComplete(() =>
+            cm.transform
+            .DOMove(new Vector3(0, 0, -10), 1)
+            .OnComplete(() =>
             {
-                control.moveable = true;
-                control.zoomable = true;
-                fullGameIsInit = true;
                 ShowStage();
             });
         });
     }
 
+    public CanvasGroup[] allCGInStage;
+
     public void ShowStage()
     {
-
+        foreach (var item in allCGInStage)
+        {
+            item.interactable = true;
+            item.blocksRaycasts = true;
+            item
+                .DOFade(1, 1)
+                .OnComplete(() =>
+            {
+                control.moveable = true;
+                control.zoomable = true;
+                fullGameIsInit = true;
+            });
+        }
     }
 
     private void Update()
