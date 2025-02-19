@@ -10,6 +10,7 @@ public class TinyTimTimTheTutorialMaster : MonoBehaviour
 
     public Sprite tinytimtimSprite;
     public string tinytimtimName;
+    public string tinytimtimTrueName;
 
     [TextArea(10, 7)]
     public string[] zoomTutorial;
@@ -29,6 +30,10 @@ public class TinyTimTimTheTutorialMaster : MonoBehaviour
     public string[] bookOpenTutorial;
     public Sprite[] bookOpenTutorialIMG;
 
+    [TextArea(10, 7)]
+    public string[] EndGameSequence;
+    public Sprite[] EndGameSequenceIMG;
+
     private bool bookAlreadyShown = false;
 
     public GameObject TheTutorialMasterHimself;
@@ -44,10 +49,15 @@ public class TinyTimTimTheTutorialMaster : MonoBehaviour
         Book,
         BookOpen,
         BookDone,
-        Complete
+        CompleteTutorial,
+        GameEnd,
+        CreditSequence,
+        RestartSequence
     };
 
     private TutorialPart currentPart;
+    public bool isReadyToRestart = false;
+    public bool isInCreditSequence = false;
 
     private void Awake()
     {
@@ -75,13 +85,18 @@ public class TinyTimTimTheTutorialMaster : MonoBehaviour
 
     public void StartBookTutorial()
     {
-        control.moveable = false;
-        control.zoomable = false;
+        control.FreezeControl();
         currentPart = TutorialPart.Book;
     }
     public void StartBookOpenTutorial()
     {
         currentPart = TutorialPart.BookOpen;
+    }
+
+    public void StartEndGameSequence()
+    {
+        currentPart = TutorialPart.GameEnd;
+        ChatBoxController.instance.ShowChat(tinytimtimSprite, tinytimtimTrueName, EndGameSequence, EndGameSequenceIMG);
     }
 
     public void BookTutorialRead()
@@ -99,15 +114,13 @@ public class TinyTimTimTheTutorialMaster : MonoBehaviour
         if (fullGameIsInit) return;
         var cm = Camera.main;
         cm
-            .DOOrthoSize(2500, 1)
-            .OnComplete(() =>
+        .DOOrthoSize(2500, 1);
+
+        cm.transform
+        .DOMove(new Vector3(0, 0, -10), 1)
+        .OnComplete(() =>
         {
-            cm.transform
-            .DOMove(new Vector3(0, 0, -10), 1)
-            .OnComplete(() =>
-            {
-                ShowStage();
-            });
+            ShowStage();
         });
     }
 
@@ -123,8 +136,7 @@ public class TinyTimTimTheTutorialMaster : MonoBehaviour
                 .DOFade(1, 1)
                 .OnComplete(() =>
             {
-                control.moveable = true;
-                control.zoomable = true;
+                control.UnFreezeControl();
                 fullGameIsInit = true;
             });
         }
@@ -174,10 +186,44 @@ public class TinyTimTimTheTutorialMaster : MonoBehaviour
                 if (ChatBoxController.instance.inChatSequence == false) //done book open tutorial chatbox
                 {
                     InitializedGame();
-                    currentPart = TutorialPart.Complete;
+                    currentPart = TutorialPart.CompleteTutorial;
                 }
                 break;
-            case TutorialPart.Complete:
+            case TutorialPart.CompleteTutorial:
+                if (ChatBoxController.instance.inChatSequence == false) //done book open tutorial chatbox
+                {
+                    bool markForEnding = false;
+
+                    markForEnding = allCGInStage[0].transform.childCount + allCGInStage[1].transform.childCount == 0;
+
+                    if (markForEnding)
+                    {
+                        StartEndGameSequence();
+                    }
+                }
+                break;
+            case TutorialPart.GameEnd:
+                if (ChatBoxController.instance.inChatSequence == false) //done book open tutorial chatbox
+                {
+                    BookController.instance.OpenBook();
+                    BookController.instance.StartCreditSequence();
+                    currentPart = TutorialPart.CreditSequence;
+                }
+                break;
+            case TutorialPart.CreditSequence:
+                if (ChatBoxController.instance.inChatSequence == false) //done book open tutorial chatbox
+                {
+                    if(!BookController.instance.isInCreditSequence)
+                    {
+                        currentPart = TutorialPart.RestartSequence;
+                    }
+                }
+                break;
+            case TutorialPart.RestartSequence:
+                if (ChatBoxController.instance.inChatSequence == false) //done book open tutorial chatbox
+                {
+                    isReadyToRestart = true;
+                }
                 break;
         }
     }

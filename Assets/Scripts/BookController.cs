@@ -1,7 +1,10 @@
 using DG.Tweening;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class BookController : MonoBehaviour
@@ -9,6 +12,10 @@ public class BookController : MonoBehaviour
     public static BookController instance;
     public List<PageController> pages = new List<PageController>();
     public List<Button> pageButtons = new List<Button>();
+    public List<CanvasGroup> pageCGs = new List<CanvasGroup>();
+
+    [SerializeField]
+    private CameraControl control;
 
     private void Awake()
     {
@@ -18,6 +25,10 @@ public class BookController : MonoBehaviour
 
     private void Start()
     {
+        if (control == null)
+        {
+            control = FindFirstObjectByType<CameraControl>();
+        }
         currentPage = 0;
     }
 
@@ -34,9 +45,33 @@ public class BookController : MonoBehaviour
     public RectTransform contentRT;
     public CanvasGroup frontCoverCG;
     public CanvasGroup bgCG;
+    public GameObject fadeOut;
+
+    public void StartCreditSequence()
+    {
+        isInCreditSequence = true;
+    }
+
+    public void EndCreditSequence()
+    {
+        isInCreditSequence = false;
+
+        foreach (var item in pageCGs)
+        {
+            item.interactable = true;
+            item.blocksRaycasts = true;
+        }
+    }
+
+    public void InitCreditPage()
+    {
+        pageCGs[currentCreditPage].interactable = true;
+        pageCGs[currentCreditPage].blocksRaycasts = true;
+    }
 
     public void OpenBook()
     {
+        control.FreezeControl();
         bookButtonRT.GetComponent<Animator>().enabled = false;
         bookButtonRT.DOScale(Vector3.zero, .5f);
         bgCG
@@ -71,6 +106,25 @@ public class BookController : MonoBehaviour
                     contentRT.SetAsLastSibling();
                     if (!TinyTimTimTheTutorialMaster.TinyTimTim.firstBookOpen)
                         TinyTimTimTheTutorialMaster.TinyTimTim.StartBookOpenTutorial();
+                    
+                    if(isInCreditSequence)
+                    {
+                        foreach (var item in pageCGs)
+                        {
+                            item.interactable = false;
+                            item.blocksRaycasts = false;
+                        }
+
+                        InitCreditPage();
+                        float markForDelay = 0;
+                        for (var i = currentCreditPage; i < pageCGs.Count; i++)
+                        {
+                            pageCGs[i]
+                            .DOFade(1,.5f)
+                            .SetDelay(markForDelay);
+                            markForDelay += .1f;
+                        }
+                    }
                 });
             });
         });
@@ -79,6 +133,9 @@ public class BookController : MonoBehaviour
     public void CloseBook()
     {
         if (!TinyTimTimTheTutorialMaster.TinyTimTim.readBookTutorial) return;
+        if (isInCreditSequence) return;
+
+        control.UnFreezeControl();
         bgCG.interactable = false;
         bgCG.blocksRaycasts = false;
 
@@ -109,6 +166,15 @@ public class BookController : MonoBehaviour
             .From(Vector3.zero)
             .OnComplete(() =>
             {
+                if(TinyTimTimTheTutorialMaster.TinyTimTim.isReadyToRestart)
+                {
+                    fadeOut.SetActive(true);
+                    SplashScreen.Begin();
+                    SplashScreen.Draw();
+                    StartCoroutine(AfterSplashScreen());
+                    return;
+                }
+
                 bookGroupCG.alpha = 0;
                 bookGroupCG.interactable = false;
                 bookGroupCG.blocksRaycasts = false;
@@ -130,6 +196,15 @@ public class BookController : MonoBehaviour
             });
         });
         currentPage = 0;
+    }
+
+    IEnumerator AfterSplashScreen()
+    {
+        while (SplashScreen.isFinished != true)
+        {
+            yield return null;
+        }
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 
     public void ShowBookButton(Sprite sprite, string contentOwner, string[] contentText, Sprite[] contentImg)
@@ -156,7 +231,8 @@ public class BookController : MonoBehaviour
     }
 
     private int currentPage = 0;
-
+    public int currentCreditPage = 5;
+    public bool isInCreditSequence = false;
     public void FlipBookToPage(int pageNum)
     {
         PageController.FlipSide side = PageController.FlipSide.Left;
@@ -186,13 +262,25 @@ public class BookController : MonoBehaviour
         }
 
         currentPage = pageNum;
+        if (isInCreditSequence)
+        { 
+            currentCreditPage += 1;
+            if (currentCreditPage >= pageCGs.Count)
+            {
+                EndCreditSequence();
+            }
+            else
+                InitCreditPage();
+        }
     }
 
     [SerializeField]
     private GameObject star;
-
+    public bool isInStarSequence = false;
     public void SpawnStar(CharacterInteraction chara, UnityEvent OnComplete)
     {
+        control.FreezeControl();
+        isInStarSequence = true;
         RectTransform charaRT = chara.GetComponent<RectTransform>();
         
         Vector3 spawnPos = charaRT.position;
@@ -275,13 +363,13 @@ public class BookController : MonoBehaviour
                     //scale star while moving
                     starRT
                     .DOScale(Vector3.one * .1f, 1f)
-                    .From(Vector3.one);
+                    .From(Vector3.one)
+                    .SetEase(Ease.InCubic);
 
                     //move star to target pos
                     starRT
                     .DOMove(targetPos, 1f)
                     .From(spawnPos)
-                    .SetEase(Ease.InCubic)
                     .OnUpdate(() =>
                     {
                         if(echoPulse >= pulseTimer)
@@ -292,8 +380,9 @@ public class BookController : MonoBehaviour
                             newStar.GetComponent<Animator>().enabled = false;
                             newStar.GetComponent<Image>().sprite = star.GetComponent<Image>().sprite;
                             newStar
-                            .DOScale(Vector3.zero, .5f)
-                            .SetDelay(.2f)
+                            .DOScale(Vector3.zero, .1f)
+                            //.SetEase(Ease.InCubic)
+                            .SetDelay(.1f)
                             .OnComplete(() =>
                             {
                                 Destroy(newStar.gameObject);
@@ -310,7 +399,11 @@ public class BookController : MonoBehaviour
                         chara.gameObject.SetActive(false);
                         star.SetActive(false);
                         UpdateButtonInBook(chara.bookIndex);
+                        control.UnFreezeControl();
                         OnComplete.Invoke();
+                        Destroy(chara.gameObject);
+                        AudioManager.Instance.PlaySound("startwink");
+                        isInStarSequence = false;
                     });
                 });
             });

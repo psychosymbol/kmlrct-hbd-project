@@ -28,6 +28,7 @@ public class CharacterInteraction : MonoBehaviour
 
     public void Interacted()
     {
+        if (BookController.instance.isInStarSequence) return;
         isInteracted = true;
         ChatBoxController.instance.ShowChat(imgSprite, contentOwner, contentText, contentIMG);
         if (!isBookButton)

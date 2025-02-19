@@ -32,6 +32,17 @@ public class CameraControl : MonoBehaviour
         }
     }
 
+    public void FreezeControl()
+    {
+        zoomable = false;
+        moveable = false;
+    }
+    public void UnFreezeControl()
+    {
+        zoomable = true;
+        moveable = true;
+    }
+
     void PanCamera()
     {
         if(Input.GetMouseButtonDown(0))
