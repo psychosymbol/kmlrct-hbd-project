@@ -168,9 +168,9 @@ public class BookController : MonoBehaviour
             {
                 if(TinyTimTimTheTutorialMaster.TinyTimTim.isReadyToRestart)
                 {
-                    fadeOut.SetActive(true);
                     SplashScreen.Begin();
                     SplashScreen.Draw();
+                    fadeOut.SetActive(true);
                     StartCoroutine(AfterSplashScreen());
                     return;
                 }
