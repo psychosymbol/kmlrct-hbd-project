@@ -55,7 +55,8 @@ public class ChatBoxController : MonoBehaviour
             chatMode = ChatMode.Text;
             chatList = new List<string>(contentText);
             chatBox.alpha = 1;
-            chatBoxContent.text = chatList[0];
+            chatBoxContent.text = chatList[chatIndex];
+            PlayChatSound(chatList[chatIndex]);
         }
 
         if (contentImg.Length == 0)
@@ -67,6 +68,7 @@ public class ChatBoxController : MonoBehaviour
             chatImg.alpha = 1;
             chatImgSprite.sprite = chatSpriteList[0];
             chatImgSprite.SetNativeSize();
+            AudioManager.Instance.PlaySound("pop");
         }
 
 
@@ -85,14 +87,40 @@ public class ChatBoxController : MonoBehaviour
         {
             case ChatMode.Text:
                 if (chatIndex >= chatList.Count) { HideChat(); return; }
-                else chatBoxContent.text = chatList[chatIndex];
+                else 
+                {
+                    chatBoxContent.text = chatList[chatIndex];
+                    PlayChatSound(chatList[chatIndex]);
+                }
                 break;
             case ChatMode.Image:
                 if (chatIndex >= chatSpriteList.Count) { HideChat(); return; }
-                else chatImgSprite.sprite = chatSpriteList[chatIndex];
+                else
+                {
+                    chatImgSprite.sprite = chatSpriteList[chatIndex];
+                    AudioManager.Instance.PlaySound("pop");
+                }
                 break;
         }
         anim.SetTrigger("Switch");
+    }
+
+    void PlayChatSound(string text)
+    {
+        string soundPlay = "short";
+        if(text.Length < 40)
+        {
+            soundPlay = "short";
+        }
+        else if(text.Length >= 40 && text.Length < 80)
+        {
+            soundPlay = "long";
+        }
+        else
+        {
+            soundPlay = "longest";
+        }
+        AudioManager.Instance.PlaySound(soundPlay);
     }
 
     public void HideChat()

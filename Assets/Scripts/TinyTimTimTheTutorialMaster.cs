@@ -43,7 +43,8 @@ public class TinyTimTimTheTutorialMaster : MonoBehaviour
         Move,
         Book,
         BookOpen,
-        Done
+        BookDone,
+        Complete
     };
 
     private TutorialPart currentPart;
@@ -90,7 +91,7 @@ public class TinyTimTimTheTutorialMaster : MonoBehaviour
 
     public void FinishTutorial()
     {
-        currentPart = TutorialPart.Done;
+        currentPart = TutorialPart.BookDone;
     }
 
     public void InitializedGame()
@@ -162,18 +163,21 @@ public class TinyTimTimTheTutorialMaster : MonoBehaviour
                     }
                 }
                 break;
-            case TutorialPart.BookOpen:
-                if(!firstBookOpen)
+            case TutorialPart.BookOpen: //done book tutorial chatbox
+                if (!firstBookOpen)
                 {
                     ChatBoxController.instance.ShowChat(tinytimtimSprite, tinytimtimName, bookOpenTutorial, bookOpenTutorialIMG);
                     firstBookOpen = true;
                 }
                 break;
-            case TutorialPart.Done:
-                if (ChatBoxController.instance.inChatSequence == false) //done zoom tutorial chatbox
+            case TutorialPart.BookDone:
+                if (ChatBoxController.instance.inChatSequence == false) //done book open tutorial chatbox
                 {
                     InitializedGame();
+                    currentPart = TutorialPart.Complete;
                 }
+                break;
+            case TutorialPart.Complete:
                 break;
         }
     }

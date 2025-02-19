@@ -272,29 +272,33 @@ public class BookController : MonoBehaviour
                 .OnComplete(() =>
                 {
                     starAnim.enabled = true;
+                    //scale star while moving
                     starRT
                     .DOScale(Vector3.one * .1f, 1f)
                     .From(Vector3.one);
+
+                    //move star to target pos
                     starRT
                     .DOMove(targetPos, 1f)
                     .From(spawnPos)
+                    .SetEase(Ease.InCubic)
                     .OnUpdate(() =>
                     {
                         if(echoPulse >= pulseTimer)
                         {
                             RectTransform newStar = Instantiate(star, starRT.position, starRT.rotation).GetComponent<RectTransform>();
-                            newStar.localScale = starRT.localScale;
                             newStar.SetParent(centerRT);
+                            newStar.localScale = starRT.localScale;
                             newStar.GetComponent<Animator>().enabled = false;
                             newStar.GetComponent<Image>().sprite = star.GetComponent<Image>().sprite;
                             newStar
                             .DOScale(Vector3.zero, .5f)
-                            .SetDelay(.1f)
+                            .SetDelay(.2f)
                             .OnComplete(() =>
                             {
                                 Destroy(newStar.gameObject);
                             });
-
+                            //pulseTimer = pulseTimer - .001f > 0 ? pulseTimer - .001f : pulseTimer;
                             echoPulse = 0;
                         }
                         Debug.Log(echoPulse);

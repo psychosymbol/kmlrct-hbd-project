@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -0.000009298325, y: 41.733356}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 88, y: 84}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &3808845572951141429
@@ -9979,6 +9979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4006b41b28550d2448e81925a7723b8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  imgSprite: {fileID: 0}
   contentIMG: []
   contentText:
   - "\u0E04\u0E33\u0E2D\u0E27\u0E22\u0E1E\u0E23"
