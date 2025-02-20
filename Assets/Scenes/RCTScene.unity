@@ -8797,6 +8797,7 @@ GameObject:
   - component: {fileID: 2101091701}
   - component: {fileID: 2101091703}
   - component: {fileID: 2101091702}
+  - component: {fileID: 2101091704}
   m_Layer: 5
   m_Name: FadeOut
   m_TagString: Untagged
@@ -8861,6 +8862,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2101091700}
   m_CullTransparentMesh: 1
+--- !u!225 &2101091704
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101091700}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &2141198080
 GameObject:
   m_ObjectHideFlags: 0
@@ -9005,6 +9018,10 @@ PrefabInstance:
         \u0E41\u0E25\u0E30\u0E2D\u0E22\u0E48\u0E32\u0E25\u0E37\u0E21\u0E2B\u0E32\u0E40\u0E27\u0E25\u0E32\u0E23\u0E27\u0E21\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E19\u0E46
         \u0E02\u0E36\u0E49\u0E19\u0E40\u0E2B\u0E19\u0E37\u0E2D\u0E21\u0E32\u0E40\u0E22\u0E35\u0E48\u0E22\u0E21\u0E1A\u0E49\u0E32\u0E07\u0E19\u0E30
         \u0E40\u0E2B\u0E07\u0E32 \U0001F979"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2252988925107707265, guid: c2cb49ff65e362c4eb76f626a8ba608b, type: 3}
+      propertyPath: m_text
+      value: More friends because I can't fit everyone in the last page
       objectReference: {fileID: 0}
     - target: {fileID: 2372079937774967381, guid: c2cb49ff65e362c4eb76f626a8ba608b, type: 3}
       propertyPath: 'contentIMG.Array.data[0]'

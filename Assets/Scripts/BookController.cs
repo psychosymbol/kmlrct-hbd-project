@@ -168,9 +168,17 @@ public class BookController : MonoBehaviour
             {
                 if(TinyTimTimTheTutorialMaster.TinyTimTim.isReadyToRestart)
                 {
-                    SplashScreen.Begin();
-                    SplashScreen.Draw();
-                    StartCoroutine(AfterSplashScreen());
+                    //SplashScreen.Begin();
+                    //SplashScreen.Draw();
+                    //StartCoroutine(AfterSplashScreen());
+                    fadeOut.SetActive(true);
+                    CanvasGroup foCG = fadeOut.GetComponent<CanvasGroup>();
+                    foCG
+                    .DOFade(1, 1)
+                    .OnComplete(() =>
+                    {
+                        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+                    });
                     return;
                 }
 
@@ -204,7 +212,7 @@ public class BookController : MonoBehaviour
 
     IEnumerator AfterSplashScreen()
     {
-        //Invoke("SetFadeOut", 1);
+        Invoke("SetFadeOut", 1);
         while (SplashScreen.isFinished != true)
         {
             yield return null;

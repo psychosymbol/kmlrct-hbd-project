@@ -761,6 +761,7 @@ GameObject:
   - component: {fileID: 113759204}
   - component: {fileID: 113759206}
   - component: {fileID: 113759205}
+  - component: {fileID: 113759207}
   m_Layer: 5
   m_Name: FadeOut
   m_TagString: Untagged
@@ -825,6 +826,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 113759203}
   m_CullTransparentMesh: 1
+--- !u!225 &113759207
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113759203}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &120383404 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4979056827373973120, guid: c2cb49ff65e362c4eb76f626a8ba608b, type: 3}

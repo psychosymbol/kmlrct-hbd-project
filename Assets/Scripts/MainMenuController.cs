@@ -1,5 +1,4 @@
 using DG.Tweening;
-using NUnit.Framework.Constraints;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -36,6 +35,8 @@ public class MainMenuController : MonoBehaviour
 
     [SerializeField]
     private GameObject startGameButton;
+    [SerializeField]
+    private GameObject fadeIn;
 
     private float sinElapse;
 
@@ -44,20 +45,31 @@ public class MainMenuController : MonoBehaviour
         Camera.main.backgroundColor = bgColors[(int)gameMode];
         Cursor.visible = false;
         CursorManager.Instance.SetCursor((int)gameMode);
-        particleSet[(int)gameMode].SetActive(true);
-        gameEdition[(int)gameMode].SetActive(true);
-
-        gameIcon.DOAnchorPos(new Vector3(0, 160), 1).From(new Vector3(0, -1000)).OnComplete(() =>
-        {
-            var cg = startText.GetComponent<CanvasGroup>();
-            cg.DOFade(1, 1).OnComplete(() =>
+        CanvasGroup fiCG = fadeIn.GetComponent<CanvasGroup>();
+        fiCG
+            .DOFade(0, 1)
+            .OnComplete(() =>
             {
-                sinElapse = 0;
-                iconIsDoneMoving = true;
-                textIsDoneShowing = true;
-                startGameButton.SetActive(true);
+                particleSet[(int)gameMode].SetActive(true);
+                gameEdition[(int)gameMode].SetActive(true);
+                fadeIn.SetActive(false);
+                gameIcon
+                    .DOAnchorPos(new Vector3(0, 160), 1)
+                    .From(new Vector3(0, -1000))
+                    .OnComplete(() =>
+                    {
+                        var cg = startText.GetComponent<CanvasGroup>();
+                        cg
+                            .DOFade(1, 1)
+                            .OnComplete(() =>
+                            {
+                                sinElapse = 0;
+                                iconIsDoneMoving = true;
+                                textIsDoneShowing = true;
+                                startGameButton.SetActive(true);
+                            });
+                    });
             });
-        });
     }
 
     // Update is called once per frame
