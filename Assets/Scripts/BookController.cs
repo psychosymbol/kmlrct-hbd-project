@@ -170,7 +170,6 @@ public class BookController : MonoBehaviour
                 {
                     SplashScreen.Begin();
                     SplashScreen.Draw();
-                    fadeOut.SetActive(true);
                     StartCoroutine(AfterSplashScreen());
                     return;
                 }
@@ -197,9 +196,15 @@ public class BookController : MonoBehaviour
         });
         currentPage = 0;
     }
+    
+    void SetFadeOut()
+    {
+        fadeOut.SetActive(true);
+    }
 
     IEnumerator AfterSplashScreen()
     {
+        //Invoke("SetFadeOut", 1);
         while (SplashScreen.isFinished != true)
         {
             yield return null;
